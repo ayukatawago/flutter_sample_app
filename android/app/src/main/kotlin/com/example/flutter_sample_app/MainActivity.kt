@@ -3,19 +3,19 @@ package com.example.flutter_sample_app
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.main_layout.*
+import kotlinx.android.synthetic.main.main_activity_layout.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_layout)
+        setContentView(R.layout.main_activity_layout)
 
-        open_flutter_activity_button.setOnClickListener {
+        openFlutterActivityButton.setOnClickListener {
             startActivity(Intent(this, SampleFlutterActivity::class.java))
         }
 
-        open_flutter_fragment_button.setOnClickListener {
-
+        openFragmentActivityButton.setOnClickListener {
+            startActivity(Intent(this, SampleFragmentActivity::class.java))
         }
     }
 }

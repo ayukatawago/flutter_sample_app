@@ -6,23 +6,23 @@
     android:orientation="vertical">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/open_flutter_activity_button"
+        android:id="@+id/openFlutterActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open Flutter Activity"
-        app:layout_constraintBottom_toTopOf="@id/open_flutter_fragment_button"
+        app:layout_constraintBottom_toTopOf="@id/openFragmentActivityButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/open_flutter_fragment_button"
+        android:id="@+id/openFragmentActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open Flutter Fragment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/open_flutter_activity_button" />
+        app:layout_constraintTop_toBottomOf="@id/openFlutterActivityButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
